@@ -29,6 +29,8 @@ def analisar(txt):
     # analisa o texto
     score = 0
 
+    if "FONTE" not in txt:
+        score = score + 1
     if "!!!" in txt:
         score = score + 1
     if "URGENTE" in txt:
