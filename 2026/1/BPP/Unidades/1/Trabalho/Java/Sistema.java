@@ -41,6 +41,9 @@ public class Sistema {
     public static String analisar(String txt) {
         int score = 0;
 
+        if (!txt.contains("FONTE")) {
+            score = score + 1;
+        }
         if (txt.contains("!!!")) {
             score = score + 1;
         }
