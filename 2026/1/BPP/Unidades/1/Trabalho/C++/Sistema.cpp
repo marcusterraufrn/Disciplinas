@@ -41,7 +41,10 @@ void func2() {
 
 string analisar(string txt) {
     int score = 0;
-
+    
+    if (txt.find("FONTE") == string::npos) {
+        score = score + 1;
+    }
     if (txt.find("!!!") != string::npos) {
         score = score + 1;
     }
